@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng dãy số</title>
+</head>
+<body>
+<b>Nhập a : </b>
+<input type="number" id="a">
+<b>Nhập b : </b>
+<input type="number" id="b">
+<button onclick="tong()">Tính</button>
+<b id="kq"> :</b>
+<script>
+    function tong(){
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        let sh = (b-a)/1 +1;
+        let tong = (a+b)*sh/2
+       alert("Tổng của dãy số là : " +tong)
+    }
+
+
+
+</script>
+</body>
+</html>
