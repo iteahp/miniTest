@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 1</title>
+</head>
+<body><b>Nhập a</b>
+<input type="number" id="number1"><br>
+<b>Nhập b</b>
+<input type="number" id="number2">
+<button onclick="TinhS()">Tính S</button>
+<h1 id="result"></h1>
+<script>
+    // bài 1 : câu lệnh là
+    // prompt("Đào Nguyên Duy")
+    // trên đây là cú pháp hiển thị hộp thoại và hiển thị tên bản thân lên hộp thoại
+    //
+    //
+    // bài 2 : câu lệnh là
+    // let a = prompt("Nhập giá trị")
+    // bài 3
+    // document.getElementById().value là câu lệnh nhận giá trị từ ô input
+
+    function TinhS(){
+        let number1 = document.getElementById('number1').value;
+        let number2 = document.getElementById('number2').value;
+        let s = number1*number2
+        document.getElementById('result').innerHTML =" Kết quả là S =  " + s
+    }
+
+</script>
+</body>
+</html>
