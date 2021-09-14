@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4 phần a</title>
+</head>
+<body>
+<b>Nhập a : </b>
+<input type="text" id="a" oninput="Tinh()"><b>m</b> <br>
+<p id="dodai" ></p>
+<p id="p"></p>
+<p id="s"></p>
+
+<script>
+    function Tinh(){
+        a =document.getElementById('a').value;
+        if (a>0){
+            let p = a*4;
+            let s = a**2
+            document.getElementById('p').innerHTML = "Chu vi hình vuông là  : " + p +  "m"
+            document.getElementById('s').innerHTML = "Diện tích hình vuông là  : " + s +  "m<sup>2</sup>"
+        }else {
+            document.getElementById('p').innerHTML = "Nhập không đúng cạnh của  1 hình vuông"
+        }
+        document.getElementById('dodai').innerHTML = "Độ dành cạnh của hình vuông là : " + a +" m "
+    }
+
+</script>
+</body>
+</html>
