@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập a và b tính mũ</title>
+</head>
+<body>
+<b>Nhập a : </b>
+<input type="number" id="a">
+<b>Nhập b : </b>
+<input type="number" id="b">
+<button onclick="bp()">Tính</button>
+<b id="kqa"> :</b>
+<b id="kqb"> </b>
+
+</body>
+<script>
+    function bp(){
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        document.getElementById('kqa').innerHTML = "a<sup>2</sup> = " + a*a
+        document.getElementById('kqb').innerHTML = "b<sup>2</sup> = " + b*b
+
+    }
+</script>
+</html>
